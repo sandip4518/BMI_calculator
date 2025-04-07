@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background-color:#f4f4f4;
+  background-color: #f4f4f4;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -12,61 +12,82 @@ body {
   height: 100vh;
 }
 
-.container{
-    height: 480px;
-    width: 550px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5%;
-}
-.header{
-    font-size: 25px;
-    font-weight: bolder;
-    color: blueviolet;
-    margin-top:13px;
-    margin-bottom: 25px;
+.container {
+  height: 480px;
+  width: 550px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5%;
 }
 
-label{
-    font-size: 23px;
-    font-weight: bold;
+.header {
+  font-size: 25px;
+  font-weight: bolder;
+  color: blueviolet;
+  margin-top: 13px;
+  margin-bottom: 25px;
 }
-.items{
-    margin-bottom: 30px;
-    margin-top: 5px;
+
+label {
+  font-size: 23px;
+  font-weight: bold;
+}
+.items {
+  margin-bottom: 30px;
+  margin-top: 5px;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
-button:hover{
-    background-color: darkblue;
+button:hover {
+  background-color: darkblue;
 }
-#suggetions{
-    font-size: 22px;
-    margin-top: 55px;
+#suggetions {
+  font-size: 22px;
+  margin-top: 25px;
 }
-#res label{
-    margin-left:-100px;
+#res label {
+  margin-left: -100px;
 }
-#result input{
-    background-color: white;
+#result input {
+  background-color: white;
 }
-input{
-    height: 25px;
-    border-radius: 3%;
-    border:0.1 solid rgba(0, 0,0,0.5);
-    font-weight: bold;
-    font-size: 15px;
+input {
+  height: 25px;
+  border-radius: 3%;
+  border: 0.1 solid rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 15px;
+}
+.progress-container {
+  width: 400px;
+  background-color: #eee;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 30px;
+  box-shadow: 0 0 5px #ccc;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%; /* change this value for different progress */
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 30px;
+  color: black;
+  transition: width 0.5s;
 }
